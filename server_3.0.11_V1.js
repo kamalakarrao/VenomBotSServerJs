@@ -154,7 +154,7 @@ app.post('/send_text_message', (req, res) => {
     //console.log(req)
     //console.log("Data End ------------")
     const text = req.body.text
-    let mobile = req.body.mobile
+    let mobile = req.body.chatId
     //console.log(client_main);
     if (mobile.toString().includes(".us")){
         mobile = mobile.toString()
